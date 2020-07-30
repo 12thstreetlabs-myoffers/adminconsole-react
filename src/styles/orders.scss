@@ -1,0 +1,103 @@
+@import "variables";
+
+.orders-filter-block {
+    padding: 0 50px 10px 50px;
+    background-color: $block-bg;
+}
+
+.filters, .laundry-breadcrumb {
+    height: 60px;
+    padding: 10px 10px 10px 0;
+}
+
+.laundry-breadcrumb {
+    padding-top: 20px;
+    color: #3A3A45;
+    a {
+        color: #3A3A45;
+    }
+}
+
+.filters {
+    .title {
+        font-size: 24px;
+        font-weight: 300;
+        font-family: 'Roboto', sans-serif;
+        color: $filter-link-colors;
+    }
+    .sort-icon {
+        float: right;
+        margin-top: 22px;
+        cursor: pointer;
+        &.asc {
+            transform: scale(1, -1);
+        }
+    }
+    .filter-link {
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        font-size: 24px;
+        color: $filter-link-colors;
+        margin-right: 37px;
+        position: relative;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.active, &:hover {
+            color: $filter-link-colors-active;
+            &:after {
+                content: '';
+                height: 3px;
+                background: #5861A2;
+                display: inline-block;
+                position: absolute;
+                bottom: -5px;
+                width: 100%;
+                left: 0;
+                border-radius: 0 0 10px 10px;
+            }
+        }
+    }
+}
+
+.order-detail-block {
+    padding: 0 50px 0 50px;
+}
+
+.order-name-block {
+    padding-left: 0;
+    font-size: 24px;
+    color: $filter-link-colors-active;
+    border-bottom: 1px solid $block-bg;
+}
+
+.order-detail-form {
+    margin-top: 40px;
+    .items {
+        border: 1px solid $block-bg;
+        .order-item {
+            background: $block-bg;
+            border-radius: 0.25rem;
+            .row {
+                margin-right: 0;
+                margin-left: 0;
+                div {
+                    padding: 10px;
+                }
+            }
+            p {
+                margin-bottom: 0;
+            }
+            .image-container {
+                height: 180px;
+                padding: 0 !important;
+                text-align: center;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        border-radius: 0.25rem;
+        padding: 10px 17px;
+    }
+}

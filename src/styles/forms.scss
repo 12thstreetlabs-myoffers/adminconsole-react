@@ -1,0 +1,58 @@
+@import "variables";
+
+
+form {
+    input, textarea, select {
+        border: 1px solid $emerald !important;
+        color: $input-color !important;
+    }
+    button {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .submit {
+        background: $emerald;
+        border-color: $emerald;
+    }
+    .detail-button, .submit {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .form-control-plaintext {
+        border: none;
+    }
+}
+
+.remove {
+    margin-top: 29px;
+}
+
+.address-line-add {
+    label {
+        display: block;
+    }
+    input, button {
+        display: inline-block;
+    }
+
+    input {
+        width: 77%;
+    }
+
+    button {
+        margin-top: 0;
+    }
+}
+
+.add-hours {
+    input, button {
+        display: inline-block;
+    }
+    input {
+        width: calc(100% - 90px);
+    }
+    button {
+        float: right;
+        margin-top: 0;
+    }
+}

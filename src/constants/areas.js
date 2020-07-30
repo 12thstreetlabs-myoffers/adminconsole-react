@@ -1,0 +1,3 @@
+export const SET_AREAS= 'SET_AREAS';
+export const SET_AREAS_DETAIL = 'SET_AREAS_DETAIL';
+export const UNMOUNT_AREAS = 'UNMOUNT_AREAS';

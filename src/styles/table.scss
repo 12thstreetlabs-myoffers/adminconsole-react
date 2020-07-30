@@ -1,0 +1,75 @@
+@import "variables";
+
+.table {
+    border: none;
+    thead {
+        background: $thead-bg;
+        td {
+            border: none;
+        }
+        tr {
+            font-weight: bold;
+            font-size: 14px;
+            th:first-child {
+                border-top-left-radius: 10px;
+            }
+            th:last-child {
+                border-top-right-radius: 10px;
+            }
+        }
+        th {
+            border: none;
+            white-space: nowrap;
+        }
+    }
+    tbody {
+        td {
+            background: $row-bg;
+            color: $text-color;
+            white-space: nowrap;
+        }
+        tr:first-child {
+            td {
+                border-top: none;
+            }
+        }
+    }
+}
+
+.laundry-table {
+    tbody {
+        tr {
+            .emerald {
+                color: $emerald;
+            }
+            .red {
+                color: $status-color;
+            }
+        }
+    }
+}
+
+.pagination.laundry {
+    .page-item {
+        margin-right: 9px;
+    }
+    .page-link {
+        padding: 12px 16px 11px 17px;
+        border-radius: 10px;
+        border: 2px solid $scg-color-active;
+        cursor: pointer;
+        color: $color-black;
+        &.disabled {
+            background-color: rgba(88, 97, 162, 0.5);
+            pointer-events: none;
+        }
+        &.begin, &.end {
+            background-color: $scg-color-active;
+            color: $color-white;
+        }
+    }
+}
+
+.table-container {
+    padding: 10px 40px 10px 50px;
+}

@@ -1,0 +1,50 @@
+@import "variables";
+
+
+.charts-row, .notification-row {
+    padding-right: 30px;
+    padding-left: 50px;
+    .charts-block, .notification-block {
+        .title {
+            font-size: 16px;
+            color: $filter-link-colors;
+            padding: 25px;
+            a {
+                color: $emerald;
+            }
+        }
+    }
+    .notification-block {
+        padding-left: 0;
+        .title {
+            font-size: 24px;
+        }
+        .stat-block {
+            width: 116px;
+            height: 116px;
+            background-color: $color-white;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+    }
+}
+.charts-row {
+    .charts-block {
+        height: 400px;
+        background-color: $color-white;
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+
+        &.bar-chart {
+            padding: 0 29px 22px 17px;
+        }
+    }
+}
+
+.notification-row {
+    margin-top: 25px;
+}
+
+.dashboard-container {
+    background-color: $block-bg;
+}
